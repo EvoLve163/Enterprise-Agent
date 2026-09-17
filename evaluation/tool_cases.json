@@ -1,0 +1,208 @@
+[
+    {
+        "question": "请查询企业知识库中的报销流程",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "根据公司内部制度文档，报销申请需要多久提交",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "查询企业知识库中的差旅报销标准",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "根据上传的PDF文档，住宿费用报销标准是什么",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "查询公司内部业务手册中的客户服务规范",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "从企业知识库检索产品C介绍资料",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "查询企业文档中产品C有哪些功能",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "根据内部资料回答产品C是否支持数据可视化",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "查询知识库中的产品C适用客户信息",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "根据企业资料说明产品C优势",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "请检索员工手册中的考勤制度",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "查询公司制度文件中的请假流程",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "从企业知识库获取员工福利政策",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "查询上传文档中的产品介绍内容",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "根据企业内部资料回答权限管理功能",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "检索公司内部关于费用报销的规定",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "查询知识库中高铁报销等级要求",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "根据企业PDF文档回答机票报销规则",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "搜索企业知识库中的产品方案",
+        "expected_tool": "knowledge_search"
+    },
+    {
+        "question": "读取内部文档，介绍产品C",
+        "expected_tool": "knowledge_search"
+    },
+
+
+    {
+        "question": "请联网搜索今天北京天气情况",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "请使用网络搜索最新人工智能新闻",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "联网查询OpenAI最新发布消息",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "搜索当前Python最新版本信息",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "请通过网络查询今天上海天气",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "搜索2026年最新AI行业动态",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "联网查询当前美元汇率",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "搜索最新数据库技术趋势",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "请查询最近科技行业新闻",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "联网搜索GitHub热门项目",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "搜索最新大模型发布情况",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "查询当前黄金价格",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "请搜索最新新能源汽车行业资讯",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "联网查询美国最新经济数据",
+        "expected_tool": "web_search"
+    },
+    {
+        "question": "搜索近期AI领域重大新闻",
+        "expected_tool": "web_search"
+    },
+
+
+    {
+        "question": "请计算1000除以25",
+        "expected_tool": "calculator"
+    },
+    {
+        "question": "计算100、200、300三个数字平均值",
+        "expected_tool": "calculator"
+    },
+    {
+        "question": "请计算15乘36的结果",
+        "expected_tool": "calculator"
+    },
+    {
+        "question": "计算10000的15%",
+        "expected_tool": "calculator"
+    },
+    {
+        "question": "去年收入100万，今年收入150万，计算增长率",
+        "expected_tool": "calculator"
+    },
+    {
+        "question": "计算500+800+300",
+        "expected_tool": "calculator"
+    },
+    {
+        "question": "计算30天每天200元的总费用",
+        "expected_tool": "calculator"
+    },
+    {
+        "question": "计算两个部门人数平均值：80和120",
+        "expected_tool": "calculator"
+    },
+    {
+        "question": "1000元住宿费用超过500元标准多少",
+        "expected_tool": "calculator"
+    },
+    {
+        "question": "计算1200减去350",
+        "expected_tool": "calculator"
+    },
+
+
+    {
+        "question": "你好",
+        "expected_tool": "none"
+    },
+    {
+        "question": "介绍一下你自己",
+        "expected_tool": "none"
+    },
+    {
+        "question": "什么是人工智能",
+        "expected_tool": "none"
+    },
+    {
+        "question": "解释一下Transformer是什么",
+        "expected_tool": "none"
+    },
+    {
+        "question": "帮我写一个产品宣传标题",
+        "expected_tool": "none"
+    }
+]

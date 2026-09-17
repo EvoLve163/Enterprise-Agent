@@ -1,0 +1,259 @@
+[
+    {
+        "question": "公司的报销流程是什么？",
+        "expected_tools": ["knowledge_search"]
+    },
+    {
+        "question": "报销需要多少个工作日内提交？",
+        "expected_tools": ["knowledge_search"]
+    },
+    {
+        "question": "高铁报销是什么标准？",
+        "expected_tools": ["knowledge_search"]
+    },
+    {
+        "question": "飞机票报销有什么限制？",
+        "expected_tools": ["knowledge_search"]
+    },
+    {
+        "question": "住宿费用报销标准是多少？",
+        "expected_tools": ["knowledge_search"]
+    },
+    {
+        "question": "公司的费用审批流程是什么？",
+        "expected_tools": ["knowledge_search"]
+    },
+    {
+        "question": "企业产品C支持哪些功能？",
+        "expected_tools": ["knowledge_search"]
+    },
+    {
+        "question": "产品C适合哪些企业使用？",
+        "expected_tools": ["knowledge_search"]
+    },
+    {
+        "question": "产品C有哪些数据分析能力？",
+        "expected_tools": ["knowledge_search"]
+    },
+    {
+        "question": "产品C是否支持权限管理？",
+        "expected_tools": ["knowledge_search"]
+    },
+
+
+    {
+        "question": "计算500加1000是多少？",
+        "expected_tools": ["calculator"]
+    },
+    {
+        "question": "100乘以25等于多少？",
+        "expected_tools": ["calculator"]
+    },
+    {
+        "question": "10000除以8是多少？",
+        "expected_tools": ["calculator"]
+    },
+    {
+        "question": "3500减去1200是多少？",
+        "expected_tools": ["calculator"]
+    },
+    {
+        "question": "计算15%的税费，金额为5000元",
+        "expected_tools": ["calculator"]
+    },
+    {
+        "question": "一个部门有35人，平均分成5组，每组多少人？",
+        "expected_tools": ["calculator"]
+    },
+    {
+        "question": "计算1234+5678",
+        "expected_tools": ["calculator"]
+    },
+    {
+        "question": "计算99乘99",
+        "expected_tools": ["calculator"]
+    },
+    {
+        "question": "计算2026减去1998",
+        "expected_tools": ["calculator"]
+    },
+    {
+        "question": "计算8000元预算平均分4个月是多少？",
+        "expected_tools": ["calculator"]
+    },
+
+
+    {
+        "question": "查询最近人工智能行业新闻",
+        "expected_tools": ["web_search"]
+    },
+    {
+        "question": "搜索最近大模型技术的发展情况",
+        "expected_tools": ["web_search"]
+    },
+    {
+        "question": "查询最新AI行业动态",
+        "expected_tools": ["web_search"]
+    },
+    {
+        "question": "最近有哪些人工智能公司新闻？",
+        "expected_tools": ["web_search"]
+    },
+    {
+        "question": "搜索近期机器学习领域资讯",
+        "expected_tools": ["web_search"]
+    },
+
+
+    {
+        "question": "公司报销流程是什么，并计算500元住宿加1000元交通费用",
+        "expected_tools": [
+            "knowledge_search",
+            "calculator"
+        ]
+    },
+    {
+        "question": "根据公司住宿标准，判断500元住宿是否符合要求",
+        "expected_tools": [
+            "knowledge_search"
+        ]
+    },
+    {
+        "question": "查询产品C功能，并总结它适合什么企业",
+        "expected_tools": [
+            "knowledge_search"
+        ]
+    },
+    {
+        "question": "根据报销规则计算2000元交通费用是否超过限制",
+        "expected_tools": [
+            "knowledge_search",
+            "calculator"
+        ]
+    },
+    {
+        "question": "读取公司制度并计算一次出差总费用",
+        "expected_tools": [
+            "knowledge_search",
+            "calculator"
+        ]
+    },
+
+
+    {
+        "question": "公司的报销制度里面有没有关于住宿的规定？",
+        "expected_tools": [
+            "knowledge_search"
+        ]
+    },
+    {
+        "question": "产品C支持多部门协作吗？",
+        "expected_tools": [
+            "knowledge_search"
+        ]
+    },
+    {
+        "question": "产品C有没有权限控制功能？",
+        "expected_tools": [
+            "knowledge_search"
+        ]
+    },
+    {
+        "question": "公司的制度文件中有没有提到高铁等级？",
+        "expected_tools": [
+            "knowledge_search"
+        ]
+    },
+    {
+        "question": "查询公司文档中关于审批的信息",
+        "expected_tools": [
+            "knowledge_search"
+        ]
+    },
+
+
+    {
+        "question": "计算2500加3500再减去1000",
+        "expected_tools": [
+            "calculator"
+        ]
+    },
+    {
+        "question": "计算一年12个月每个月500元总共多少",
+        "expected_tools": [
+            "calculator"
+        ]
+    },
+    {
+        "question": "计算3000元预算增加20%是多少",
+        "expected_tools": [
+            "calculator"
+        ]
+    },
+    {
+        "question": "计算10000元分配给10个人每人多少",
+        "expected_tools": [
+            "calculator"
+        ]
+    },
+    {
+        "question": "计算45乘以36",
+        "expected_tools": [
+            "calculator"
+        ]
+    },
+
+
+    {
+        "question": "搜索最新AI模型发布消息",
+        "expected_tools": [
+            "web_search"
+        ]
+    },
+    {
+        "question": "查询当前人工智能领域热点",
+        "expected_tools": [
+            "web_search"
+        ]
+    },
+    {
+        "question": "搜索最近关于企业AI应用的信息",
+        "expected_tools": [
+            "web_search"
+        ]
+    },
+
+
+    {
+        "question": "公司的报销标准是什么，同时计算1000元住宿是否超标",
+        "expected_tools": [
+            "knowledge_search",
+            "calculator"
+        ]
+    },
+    {
+        "question": "查询产品C资料，并计算三个部门平均使用人数",
+        "expected_tools": [
+            "knowledge_search",
+            "calculator"
+        ]
+    },
+    {
+        "question": "根据企业资料回答产品功能，不确定的信息不要编造",
+        "expected_tools": [
+            "knowledge_search"
+        ]
+    },
+    {
+        "question": "查询公司政策并给出相关说明",
+        "expected_tools": [
+            "knowledge_search"
+        ]
+    },
+    {
+        "question": "查询最新AI资讯并总结",
+        "expected_tools": [
+            "web_search"
+        ]
+    }
+]
