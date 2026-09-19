@@ -200,27 +200,45 @@ Agent：
 
 ## 📂 项目结构
 
-    Enterprise-Agent
+Enterprise-Agent
 
-    ├── agent
-    │   ├── graph.py
-    │   ├── prompts.py
-    │   └── state.py
-    │
-    ├── rag
-    │   ├── retriever.py
-    │   └── embedding.py
-    │
-    ├── tools
-    │   ├── search.py
-    │   └── calculator.py
-    │
-    ├── evaluation
-    │   └── evaluate.py
-    │
-    ├── app.py
-    ├── cli.py
-    └── requirements.txt
+│
+├── agent
+│   ├── graph.py              # LangGraph Agent 工作流编排
+│   ├── prompts.py            # Agent 系统提示词
+│
+├── core
+│   ├── config.py             # 项目配置与环境变量管理
+│   ├── llm.py                # 大模型调用封装
+│   ├── tool_registry.py      # Tool 工具注册管理
+│
+├── rag
+│   ├── document_manager.py   # 文档上传与知识库构建
+│   ├── vector_store.py       # 向量数据库与检索模块
+│
+├── tools
+│   ├── calculator.py         # 数学计算工具
+│   ├── knowledge.py          # 企业知识库检索工具
+│   ├── web_search.py         # Web 搜索工具
+│
+├── data
+│   └── documents             # 企业文档知识库(PDF)
+│
+├── evaluation
+│   ├── evaluator.py          # Agent 自动化评测
+│   ├── rag_cases.json        # RAG 检索测试集
+│   ├── tool_cases.json       # Tool 调用测试集
+│   ├── workflow_cases.json   # Agent 工作流测试集
+│   ├── reflection_test.py    # Reflection 测试
+│   ├── rag_test.py           # RAG 测试
+│   ├── tool_test.py          # Tool 测试
+│   └── workflow_test.py      # Workflow 测试
+│
+├── app.py                    # Streamlit Web 应用入口
+├── cli.py                    # 命令行运行入口
+├── requirements.txt          # 项目依赖
+├── README.md                 # 项目说明
+└── .env.example              # 环境变量模板
 
 ------------------------------------------------------------------------
 
@@ -244,9 +262,8 @@ pip install -r requirements.txt
 
 ### 配置环境变量
 
-复制：
 
-    .env.example -> .env
+    .env.example 
 
 填写：
 
@@ -254,9 +271,6 @@ pip install -r requirements.txt
     OPENAI_BASE_URL=
     MODEL_NAME=
 
-注意：
-
-不要将真实 API Key 提交到 GitHub。
 
 ------------------------------------------------------------------------
 
