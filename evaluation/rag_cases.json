@@ -1,0 +1,206 @@
+[
+    {
+        "query": "公司的报销流程是什么",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "员工费用如何进行报销",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "报销申请需要什么时候提交",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "费用报销的时间要求是什么",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "报销需要多少个工作日内完成提交",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "公司差旅报销制度是什么",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "出差费用如何报销",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "高铁票报销有什么规定",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "乘坐高铁可以报销什么等级",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "高铁标准是多少",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "飞机票报销标准是什么",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "出差乘坐飞机有什么要求",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "机票是否限制经济舱",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "住宿费用报销标准是多少",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "员工住宿报销有什么限制",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "住宿费最高可以报销多少",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "差旅住宿费用标准",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "公司费用制度有哪些内容",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "企业报销政策说明",
+        "expected": "demo_company_policy.pdf"
+    },
+    {
+        "query": "员工出差费用管理规定",
+        "expected": "demo_company_policy.pdf"
+    },
+
+
+    {
+        "query": "产品C是什么",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C有哪些功能",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C的核心能力是什么",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "企业数据分析平台有哪些功能",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C支持数据分析吗",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C是否提供数据可视化能力",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C是否支持报告生成",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C有哪些分析功能",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C适合哪些企业使用",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "哪些公司适合部署产品C",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C主要解决什么问题",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C是否支持权限管理",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C有没有用户权限控制",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C是否支持多部门协作",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C支持企业内部协同吗",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C部署速度如何",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C是否支持快速部署",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "企业为什么选择产品C",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C的数据平台能力",
+        "expected": "product_c.pdf"
+    },
+    {
+        "query": "产品C有哪些企业级能力",
+        "expected": "product_c.pdf"
+    },
+
+
+    {
+        "query": "公司的股票激励制度是什么",
+        "expected": null
+    },
+    {
+        "query": "公司员工考勤规则是什么",
+        "expected": null
+    },
+    {
+        "query": "公司的薪资调整政策是什么",
+        "expected": null
+    },
+    {
+        "query": "公司年假制度是什么",
+        "expected": null
+    },
+    {
+        "query": "公司招聘流程是什么",
+        "expected": null
+    },
+    {
+        "query": "产品C的价格是多少",
+        "expected": null
+    },
+    {
+        "query": "产品C有哪些客户案例",
+        "expected": null
+    },
+    {
+        "query": "产品C和竞品相比有什么优势",
+        "expected": null
+    },
+    {
+        "query": "产品C未来发展规划是什么",
+        "expected": null
+    },
+    {
+        "query": "公司今年营收是多少",
+        "expected": null
+    }
+]

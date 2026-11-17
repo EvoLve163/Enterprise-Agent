@@ -1,0 +1,30 @@
+# ==== 环境与密钥 ====
+.env
+.venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+.streamlit/
+.pytest_cache/
+
+# ==== 前端 ====
+node_modules/
+frontend/dist/
+frontend/.env.local
+
+# ==== 本地数据（运行时生成，不入库） ====
+# FAISS 二进制索引：clone 后首次启动会从 data/documents 全量重建
+data/vector_store/
+# 测试生成的临时 PDF 与日志
+Test/*.pdf
+Test/_env_failure_stderr.log
+
+# ==== 历史遗留条目（保留以兼容旧路径） ====
+data/uploads/
+data/index/*
+!data/index/.gitkeep
+
+# ==== 其他 ====
+*.log
+.DS_Store

@@ -1,0 +1,35 @@
+[
+    {
+        "question": "公司的报销流程是什么？",
+        "expected_keywords": [
+            "10个工作日",
+            "高铁",
+            "住宿"
+        ],
+        "type": "knowledge"
+    },
+    {
+        "question": "产品A适合什么客户？",
+        "expected_keywords": [
+            "中小团队",
+            "快速部署"
+        ],
+        "type": "knowledge"
+    },
+    {
+        "question": "产品C有哪些功能？",
+        "expected_keywords": [
+            "数据报表",
+            "权限管理",
+            "数据可视化"
+        ],
+        "type": "knowledge"
+    },
+    {
+        "question": "你好，你是谁？",
+        "expected_keywords": [
+            "Enterprise Agent"
+        ],
+        "type": "chat"
+    }
+]

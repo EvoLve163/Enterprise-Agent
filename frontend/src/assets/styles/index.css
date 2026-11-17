@@ -1,0 +1,62 @@
+/* ===== 全局设计基线：统一字体、间距、颜色 ===== */
+
+:root {
+  /* 色板（与 Element Plus 默认主题对齐） */
+  --ea-primary: #409eff;
+  --ea-success: #67c23a;
+  --ea-danger: #f56c6c;
+  --ea-bg: #f5f7fa;
+  --ea-surface: #ffffff;
+  --ea-border: #e4e7ed;
+  --ea-text-primary: #303133;
+  --ea-text-secondary: #606266;
+  --ea-text-muted: #909399;
+
+  /* 间距节奏 */
+  --ea-gap-xs: 4px;
+  --ea-gap-sm: 8px;
+  --ea-gap-md: 16px;
+  --ea-gap-lg: 24px;
+
+  /* 布局尺寸 */
+  --ea-sidebar-width: 232px;
+  --ea-header-height: 64px;
+  --ea-radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ea-text-primary);
+  background: var(--ea-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 通用页面卡片 */
+.ea-page-card {
+  background: var(--ea-surface);
+  border: 1px solid var(--ea-border);
+  border-radius: var(--ea-radius);
+}
+
+/* 二级说明文字 */
+.ea-desc {
+  margin: 0;
+  color: var(--ea-text-muted);
+  font-size: 13px;
+}
