@@ -1,13 +1,13 @@
 import json
 from pathlib import Path
 
-from agent.graph import EnterpriseAgent
+from backend.agent.graph import EnterpriseAgent
 
-from rag.vector_store import KnowledgeBase
+from backend.rag.vector_store import KnowledgeBase
 
-from tools.knowledge import KnowledgeToolFactory
-from tools.calculator import calculator
-from tools.web_search import web_search
+from backend.tools.knowledge import KnowledgeToolFactory
+from backend.tools.calculator import calculator
+from backend.tools.web_search import web_search
 
 
 

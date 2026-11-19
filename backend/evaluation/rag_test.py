@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-from rag.vector_store import KnowledgeBase
+from backend.rag.vector_store import KnowledgeBase
 
 
 

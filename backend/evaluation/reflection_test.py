@@ -1,19 +1,19 @@
 import sys
 from pathlib import Path
 
-# 加入项目根目录
+# 加入项目根目录（backend/evaluation -> backend -> 项目根）
 sys.path.append(
-    str(Path(__file__).resolve().parent.parent)
+    str(Path(__file__).resolve().parent.parent.parent)
 )
 
 
-from agent.graph import EnterpriseAgent
-from core.tool_registry import ToolRegistry
-from tools.knowledge import KnowledgeToolFactory
-from tools.calculator import calculator
-from tools.web_search import web_search
+from backend.agent.graph import EnterpriseAgent
+from backend.core.tool_registry import ToolRegistry
+from backend.tools.knowledge import KnowledgeToolFactory
+from backend.tools.calculator import calculator
+from backend.tools.web_search import web_search
 
-from rag.vector_store import KnowledgeBase
+from backend.rag.vector_store import KnowledgeBase
 
 
 def run_case(agent, question):

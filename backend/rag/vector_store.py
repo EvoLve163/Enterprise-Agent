@@ -6,13 +6,14 @@ from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from core.config import EMBEDDING_MODEL, TOP_K
+from backend.core.config import EMBEDDING_MODEL, TOP_K
 
 
 class KnowledgeBase:
     def __init__(self, documents_dir: str = "data/documents"):
         # PDF文档目录
-        BASE_DIR = Path(__file__).resolve().parent.parent
+        # 项目根（backend/rag/vector_store.py -> backend/rag -> backend -> 项目根）
+        BASE_DIR = Path(__file__).resolve().parent.parent.parent
         self.documents_dir = BASE_DIR / documents_dir
         # FAISS向量库存储目录,文件夹路径
         self.vector_store_dir = BASE_DIR / "data/vector_store"

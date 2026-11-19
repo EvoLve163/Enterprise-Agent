@@ -8,11 +8,10 @@ Reflection（自我审查）环节，回答中明确标注依据来源（文件�
 
 本项目包含三层：
 
-- **Agent 核心**（`agent/` `core/` `rag/` `tools/`）：LangGraph 状态图驱动的企业问答 Agent，
+- **Agent 核心 + FastAPI 后端**（均在 `backend/`）：`backend/agent` `backend/core` `backend/rag` `backend/tools` 为 LangGraph 状态图驱动的企业问答 Agent，
   支持 knowledge_search / web_search / calculator 三个工具、按 thread 的多轮对话记忆、
-  Reflection 审查与 REVISE 修订循环。
-- **FastAPI 后端**（`backend/`）：将 Agent 封装为 REST API —— 聊天问答、会话管理、
-  知识库文档上传/删除/重建、评测触发与结果查询。不改动原有核心代码，纯组合式封装。
+  Reflection 审查与 REVISE 修订循环；`backend/routers` `backend/services` 等将其封装为 REST API ——
+  聊天问答、会话管理、知识库文档上传/删除/重建、评测触发与结果查询。
 - **Vue3 前端**（`frontend/`）：智能问答 / 知识库管理 / Agent 执行监控 / 评测管理四个页面，
   Markdown 渲染 + 引用来源展示 + 执行轨迹时间线。
 
@@ -68,7 +67,7 @@ Reflection（自我审查）环节，回答中明确标注依据来源（文件�
   回滚残留文件）、删除（二次确认，FAISS 同步重建）、全量重建；上传后立即可检索、删除后立即不可检索。
 - **Agent 执行监控**：查看本机或任意会话的逐轮执行记录，轨迹时间线严格展示真实 trace，
   不伪造未发生的步骤。
-- **评测管理**：触发内置 4 用例评测（复用 `evaluation/evaluator.py` 的用例与关键词命中率
+- **评测管理**：触发内置 4 用例评测（复用 `backend/evaluation/evaluator.py` 的用例与关键词命中率
   评分），后台线程执行、运行中防重复提交（409），结果含每例得分/命中与未命中关键词/真实回答。
 - **安全设计**：`.env` 密钥不入库；前端零密钥、零硬编码地址；上传/删除路径穿越防护；
   统一错误结构 `{"detail":{"code","message"}}`。
@@ -77,21 +76,21 @@ Reflection（自我审查）环节，回答中明确标注依据来源（文件�
 
 ```
 enterprise-agent/
-├── agent/                  # Agent 核心：LangGraph 状态图 + 提示词
-│   ├── graph.py            #   EnterpriseAgent.ask(question, thread_id) -> (answer, trace)
-│   └── prompts.py
-├── core/                   # 配置 / LLM 工厂 / 工具注册表
-├── rag/                    # 知识库（FAISS 增删重建）与文档管理
-├── tools/                  # knowledge_search / web_search / calculator
-├── evaluation/             # 评测器与用例（test_cases.json）
-├── backend/                # FastAPI 后端
-│   ├── main.py             #   应用工厂 + lifespan + 异常处理 + CORS
-│   ├── bootstrap.py        #   组合根：单例装配，工具闭包与文档管理共享同一 KB 实例
-│   ├── schemas.py          #   请求/响应模型
-│   ├── errors.py           #   业务异常体系
-│   ├── deps.py             #   依赖注入
-│   ├── routers/            #   chat / documents / evaluation
-│   └── services/           #   AgentService / DocumentService / EvaluationService
+├── backend/                   # 后端（Agent 内核 + FastAPI 封装）
+│   ├── agent/                 # Agent 核心：LangGraph 状态图 + 提示词
+│   │   ├── graph.py           #   EnterpriseAgent.ask(question, thread_id) -> (answer, trace)
+│   │   └── prompts.py
+│   ├── core/                  # 配置 / LLM 工厂 / 工具注册表
+│   ├── rag/                   # 知识库（FAISS 增删重建）与文档管理
+│   ├── tools/                 # knowledge_search / web_search / calculator
+│   ├── evaluation/            # 评测器与用例（test_cases.json）
+│   ├── main.py                # 应用工厂 + lifespan + 异常处理 + CORS
+│   ├── bootstrap.py           # 组合根：单例装配，工具闭包与文档管理共享同一 KB 实例
+│   ├── schemas.py             # 请求/响应模型
+│   ├── errors.py              # 业务异常体系
+│   ├── deps.py                # 依赖注入
+│   ├── routers/               # chat / documents / evaluation
+│   └── services/              # AgentService / DocumentService / EvaluationService
 ├── frontend/               # Vue3 前端
 │   ├── src/api/            #   axios 封装 + 模块化接口
 │   ├── src/views/          #   Chat / Knowledge / AgentMonitor / Evaluation

@@ -1,5 +1,5 @@
 from langchain.tools import tool
-from rag.vector_store import KnowledgeBase
+from backend.rag.vector_store import KnowledgeBase
 
 
 class KnowledgeToolFactory:

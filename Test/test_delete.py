@@ -1,4 +1,4 @@
-from rag.vector_store import KnowledgeBase
+from backend.rag.vector_store import KnowledgeBase
 
 
 kb = KnowledgeBase()

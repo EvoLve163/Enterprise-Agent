@@ -1,12 +1,12 @@
 import json
 from pathlib import Path
 
-from agent.graph import EnterpriseAgent
-from tools.calculator import calculator
-from tools.knowledge import KnowledgeToolFactory
-from tools.web_search import web_search
-from core.tool_registry import ToolRegistry
-from rag.vector_store import KnowledgeBase
+from backend.agent.graph import EnterpriseAgent
+from backend.tools.calculator import calculator
+from backend.tools.knowledge import KnowledgeToolFactory
+from backend.tools.web_search import web_search
+from backend.core.tool_registry import ToolRegistry
+from backend.rag.vector_store import KnowledgeBase
 
 
 def load_cases():

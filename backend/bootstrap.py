@@ -21,14 +21,14 @@ import logging
 from dataclasses import dataclass
 from pathlib import Path
 
-from agent.graph import EnterpriseAgent
-from core.config import MAX_REFLECTIONS
-from core.tool_registry import ToolRegistry
-from rag.document_manager import DocumentManager
-from rag.vector_store import KnowledgeBase
-from tools.calculator import calculator
-from tools.knowledge import KnowledgeToolFactory
-from tools.web_search import web_search
+from backend.agent.graph import EnterpriseAgent
+from backend.core.config import MAX_REFLECTIONS
+from backend.core.tool_registry import ToolRegistry
+from backend.rag.document_manager import DocumentManager
+from backend.rag.vector_store import KnowledgeBase
+from backend.tools.calculator import calculator
+from backend.tools.knowledge import KnowledgeToolFactory
+from backend.tools.web_search import web_search
 
 from backend.services.agent_service import AgentService
 from backend.services.document_service import DocumentService

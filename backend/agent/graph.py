@@ -5,8 +5,8 @@ from langchain_core.tools import BaseTool
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import END, START, StateGraph
 from langgraph.prebuilt import ToolNode
-from agent.prompts import REFLECTION_PROMPT, SYSTEM_PROMPT
-from core.llm import build_llm
+from backend.agent.prompts import REFLECTION_PROMPT, SYSTEM_PROMPT
+from backend.core.llm import build_llm
 
 # _agent_node()：负责思考
 # _tool_node()：负责执行工具
