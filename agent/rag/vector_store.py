@@ -6,7 +6,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from backend.core.config import EMBEDDING_MODEL, TOP_K
+from agent.core.config import EMBEDDING_MODEL, TOP_K
 
 
 class KnowledgeBase:

@@ -23,7 +23,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Optional
 
-from backend.agent.graph import EnterpriseAgent
+from agent.graph import EnterpriseAgent
 
 from backend.errors import BadRequestError, NotFoundError, UpstreamError
 from backend.schemas import SESSION_ID_PATTERN

@@ -1,7 +1,7 @@
 import requests
 from langchain.tools import tool
 
-from backend.core.config import SERPAPI_API_KEY
+from agent.core.config import SERPAPI_API_KEY
 
 
 @tool("web_search")

@@ -1,7 +1,7 @@
 from pathlib import Path
 import shutil
 
-from backend.rag.vector_store import KnowledgeBase
+from agent.rag.vector_store import KnowledgeBase
 
 
 class DocumentManager:

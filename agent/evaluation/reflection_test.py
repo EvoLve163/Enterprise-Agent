@@ -7,13 +7,13 @@ sys.path.append(
 )
 
 
-from backend.agent.graph import EnterpriseAgent
-from backend.core.tool_registry import ToolRegistry
-from backend.tools.knowledge import KnowledgeToolFactory
-from backend.tools.calculator import calculator
-from backend.tools.web_search import web_search
+from agent.graph import EnterpriseAgent
+from agent.core.tool_registry import ToolRegistry
+from agent.tools.knowledge import KnowledgeToolFactory
+from agent.tools.calculator import calculator
+from agent.tools.web_search import web_search
 
-from backend.rag.vector_store import KnowledgeBase
+from agent.rag.vector_store import KnowledgeBase
 
 
 def run_case(agent, question):

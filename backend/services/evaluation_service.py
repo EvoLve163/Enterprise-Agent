@@ -21,10 +21,10 @@ import uuid
 from datetime import datetime
 from typing import Any, Optional
 
-from backend.agent.graph import EnterpriseAgent
+from agent.graph import EnterpriseAgent
 
 from backend.errors import ConflictError
-from backend.evaluation.evaluator import evaluate_answer, load_cases
+from agent.evaluation.evaluator import evaluate_answer, load_cases
 
 logger = logging.getLogger(__name__)
 

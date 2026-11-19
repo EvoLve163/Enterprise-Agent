@@ -1,4 +1,4 @@
-from backend.rag.vector_store import KnowledgeBase
+from agent.rag.vector_store import KnowledgeBase
 
 
 kb = KnowledgeBase()

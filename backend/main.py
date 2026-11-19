@@ -22,7 +22,7 @@ from backend.bootstrap import build_runtime
 from backend.errors import AppError
 from backend.routers import chat, documents, evaluation
 from backend.schemas import HealthResponse
-from backend.core.config import LLM_API_KEY, SERPAPI_API_KEY
+from agent.core.config import LLM_API_KEY, SERPAPI_API_KEY
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s"

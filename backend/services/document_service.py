@@ -19,7 +19,7 @@ import threading
 from datetime import datetime
 from pathlib import Path
 
-from backend.rag.document_manager import DocumentManager
+from agent.rag.document_manager import DocumentManager
 
 from backend.errors import BadRequestError, ConflictError, NotFoundError, UpstreamError
 

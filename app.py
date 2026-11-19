@@ -2,14 +2,14 @@ from pathlib import Path
 
 import streamlit as st
 
-from backend.agent.graph import EnterpriseAgent
-from backend.core.config import MAX_REFLECTIONS
-from backend.rag.vector_store import KnowledgeBase
-from backend.tools.calculator import calculator
-from backend.tools.knowledge import KnowledgeToolFactory
-from backend.tools.web_search import web_search
-from backend.core.tool_registry import ToolRegistry
-from backend.rag.document_manager import DocumentManager
+from agent.graph import EnterpriseAgent
+from agent.core.config import MAX_REFLECTIONS
+from agent.rag.vector_store import KnowledgeBase
+from agent.tools.calculator import calculator
+from agent.tools.knowledge import KnowledgeToolFactory
+from agent.tools.web_search import web_search
+from agent.core.tool_registry import ToolRegistry
+from agent.rag.document_manager import DocumentManager
 
 
 st.set_page_config(page_title="Enterprise Agent", page_icon="🤖", layout="wide")

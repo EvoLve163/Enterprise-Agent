@@ -1,6 +1,6 @@
 from langchain_openai import ChatOpenAI
 
-from backend.core.config import LLM_API_KEY, LLM_BASE_URL, LLM_MODEL_ID, LLM_TEMPERATURE, LLM_TIMEOUT
+from agent.core.config import LLM_API_KEY, LLM_BASE_URL, LLM_MODEL_ID, LLM_TEMPERATURE, LLM_TIMEOUT
 
 
 def build_llm() -> ChatOpenAI:

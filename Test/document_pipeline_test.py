@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from backend.rag.document_manager import DocumentManager
-from backend.rag.vector_store import KnowledgeBase
+from agent.rag.document_manager import DocumentManager
+from agent.rag.vector_store import KnowledgeBase
 
 
 def test_pipeline():
